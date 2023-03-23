@@ -7,3 +7,4 @@ server:
       value: "true"
   extraArgs:	
     - --auth-mode=sso
+	  # -- SSO configuration when SSO is specified as a server auth mode.	
