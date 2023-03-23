@@ -1,10 +1,10 @@
 crds:
   install: false
   keep: false
-server:
-  extraEnv:	
-    - name: SSO_DELEGATE_RBAC_TO_NAMESPACE
-      value: "true"
-  extraArgs:	
-    - --auth-mode=sso
-	  # -- SSO configuration when SSO is specified as a server auth mode.	
+# server:
+#    extraEnv:	
+#     - name: SSO_DELEGATE_RBAC_TO_NAMESPACE
+#       value: "true"
+#   extraArgs:	
+#     - --auth-mode=sso
+# 	  # -- SSO configuration when SSO is specified as a server auth mode.	
