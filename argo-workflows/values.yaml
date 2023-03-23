@@ -1,0 +1,9 @@
+crds:
+  install: false
+  keep: false
+server:
+  extraEnv:	
+    - name: SSO_DELEGATE_RBAC_TO_NAMESPACE
+      value: "true"
+  extraArgs:	
+    - --auth-mode=sso
