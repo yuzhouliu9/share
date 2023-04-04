@@ -26,7 +26,7 @@ class IP:
         self.count_max = max(self.count_max, count)
 
     def output_header():
-        return ["IP", "Max Count", "Min Count", "Occurrences", "User Agent", "Country", "Org"]
+        return ["IP", "Max Rate", "Min Rate", "Occurrences", "User Agent", "Country", "Org"]
     
     def output(self):
         return [self.addr, self.count_max, self.count_min, self.occurrences, self.user_agent, self.whois_country, self.whois_org]
