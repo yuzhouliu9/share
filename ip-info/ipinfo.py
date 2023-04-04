@@ -10,13 +10,14 @@ def main():
 
     parse_csv(args.file, ip_dict)
 
-    print("YUZHOU DEBUG", ip_dict["206.189.50.226"].whois.text)
+    # print("YUZHOU DEBUG: ", ip_dict["23.105.12.71"].whois)
 
     data = []
     for ip_obj in ip_dict.values():
         data.append(ip_obj.output())
     
     output_df = pandas.DataFrame(data, columns=ip.IP.output_header())
+    output_df.sort_values(by=["Max Count"], ascending=False)
     output_df.to_csv("output.csv")
 
 

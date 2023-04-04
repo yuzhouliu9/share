@@ -1,4 +1,4 @@
 argparse
 futures
 pandas
-python-whois
+pycountry
